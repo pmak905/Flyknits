@@ -10,4 +10,6 @@
     <string name="col_date">Date</string>
     <string name="col_desc">Description</string>
     <string name="col_amt">Amount</string>
+    <string name="user_name">John Smith</string>
+    <string name="user_email">john.smith@cgi.com</string>
 </resources>
