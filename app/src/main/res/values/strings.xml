@@ -4,7 +4,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_open_rrsp">You have a job! Open RRSP.</string>
+    <string name="action_open_tfsa">Open TFSA</string>
     <string name="header_balance">Balances</string>
     <string name="newjob_chq">BMO Chequing</string>
     <string name="col_date">Date</string>
