@@ -80,29 +80,46 @@ public class MainActivity extends AppCompatActivity
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if(item.isCheckable()){
-            if(item.isChecked())item.setChecked(false);
-            else item.setChecked(true);
+            if(item.isChecked()){
+                item.setChecked(false);
+                item.setIcon(R.drawable.ic_checkbox_empty);
+            }
+            else {
+                item.setChecked(true);
+                item.setIcon(R.drawable.ic_checkbox_checked);
+            }
         }
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_life_knot) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_life_bun) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_life_pension) {
 
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-       }
+        } else if (id == R.id.nav_life_gig) {
+
+        } else if (id == R.id.nav_fumes) {
+
+        } else if (id == R.id.nav_brake_bank) {
+
+        } else if (id == R.id.nav_tax_loss_harvest) {
+
+        } else if (id == R.id.nav_new_president) {
+
+        } else if (id == R.id.nav_brexit) {
+
+        } else if (id == R.id.nav_jackpot) {
+
+        } else if (id == R.id.nav_inheritance) {
+
+        }
 
 //        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 //        drawer.closeDrawer(GravityCompat.START);

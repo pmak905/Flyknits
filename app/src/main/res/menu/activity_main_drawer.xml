@@ -1,36 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <group android:checkableBehavior="all">
-        <item
-            android:id="@+id/nav_camera"
-            android:checkable="true"
-            android:title="Life event 1" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:checkable="true"
-            android:title="Life event 2" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:checkable="true"
-            android:title="Life event 3" />
-        <item
-            android:id="@+id/nav_manage"
-            android:checkable="true"
-            android:title="Life event 4" />
-    </group>
+    <item
+        android:checkableBehavior="all"
+        android:title="Life Events">
+        <menu android:checkableBehavior="all">
+            <item
+                android:id="@+id/nav_life_knot"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Tie the Knot" />
+            <item
+                android:id="@+id/nav_life_bun"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Bun in the Oven" />
+            <item
+                android:id="@+id/nav_life_pension"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Goodbye Tension, Hello Pension" />
+            <item
+                android:id="@+id/nav_life_gig"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="New Gig! Make it Rain" />
+        </menu>
+    </item>
 
-    <!--<item android:title="Communicate">-->
-        <!--<menu>-->
-            <!--<item-->
-                <!--android:id="@+id/nav_share"-->
-                <!--android:icon="@drawable/ic_menu_share"-->
-                <!--android:title="Share" />-->
-            <!--<item-->
-                <!--android:id="@+id/nav_send"-->
-                <!--android:icon="@drawable/ic_menu_send"-->
-                <!--android:title="Send" />-->
-        <!--</menu>-->
-    <!--</item>-->
-
+    <item
+        android:checkableBehavior="all"
+        android:title="Tax Events">
+        <menu android:checkableBehavior="all">
+            <item
+                android:id="@+id/nav_fumes"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Running on Fumes" />
+            <item
+                android:id="@+id/nav_brake_bank"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Break the Bank" />
+            <item
+                android:id="@+id/nav_tax_loss_harvest"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Tax-loss Harvestiong" />
+        </menu>
+    </item>
+    <item
+        android:checkableBehavior="all"
+        android:title="News Events">
+        <menu android:checkableBehavior="all">
+            <item
+                android:id="@+id/nav_new_president"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Make America Great Again!" />
+            <item
+                android:id="@+id/nav_brexit"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Straight Outta Europe" />
+        </menu>
+    </item>
+    <item
+        android:checkableBehavior="all"
+        android:title="Unexpected Events">
+        <menu android:checkableBehavior="all">
+            <item
+                android:id="@+id/nav_jackpot"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="Jackpot!" />
+            <item
+                android:id="@+id/nav_inheritance"
+                android:checkable="true"
+                android:icon="@drawable/ic_checkbox_empty"
+                android:title="When it Rains, it Pours!" />
+        </menu>
+    </item>
 </menu>
