@@ -6,8 +6,10 @@
 
     <string name="action_open_rrsp">You have a job! Open RRSP.</string>
     <string name="action_open_tfsa">Open TFSA</string>
+    <string name="action_tfsa_description">In order to make the most of your inflow, consider opening a Tax-Free Savings Account!</string>
     <string name="header_balance">Balances</string>
     <string name="newjob_chq">BMO Chequing</string>
+    <string name="main_title">Spending</string>
     <string name="col_date">Date</string>
     <string name="col_desc">Description</string>
     <string name="col_amt">Amount</string>
