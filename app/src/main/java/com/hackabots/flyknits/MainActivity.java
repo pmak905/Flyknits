@@ -30,8 +30,10 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "You have a new job! Open a RRSP account today.", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(MainActivity.this, NotificationsActivity.class);
+                startActivity(intent);
+//                Snackbar.make(view, "You have a new job! Open a RRSP account today.", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
