@@ -11,7 +11,7 @@
     tools:layout_editor_absoluteX="0dp">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/main_page_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_title"
@@ -24,38 +24,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:onClick="openChqTxns"
-        android:text="@string/newjob_chq"
-        android:layout_marginStart="16dp"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="163dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
-
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline"
-        app:layout_constraintGuide_begin="20dp"
-        android:orientation="horizontal" />
-
-    <android.support.constraint.Guideline
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guideline2"
-        app:layout_constraintGuide_begin="20dp"
-        android:orientation="vertical" />
-
     <android.support.v7.widget.CardView
-        android:id="@+id/card_chequingview"
+        android:id="@+id/card_chequing_view"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="63dp"
+        android:onClick="openChqTxns"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -69,7 +43,7 @@
             android:layout_height="129dp">
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/chequing_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -84,11 +58,11 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/account_number"
+                android:id="@+id/chequing_account_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/textView3"
-                android:layout_alignStart="@+id/title"
+                android:layout_alignBottom="@+id/chequing_balance"
+                android:layout_alignStart="@+id/chequing_title"
                 android:layout_marginBottom="17dp"
                 android:maxLines="3"
                 android:padding="8dp"
@@ -97,7 +71,7 @@
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/chequing_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -106,10 +80,8 @@
                 android:text="$1,234.00"
                 android:textSize="18dp"
                 android:textColor="#0000ff"
-                app:layout_constraintBaseline_toBaselineOf="@+id/button"
-                app:layout_constraintLeft_toRightOf="@+id/button"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_below="@+id/title"
+                android:layout_below="@+id/chequing_title"
                 android:layout_toStartOf="@+id/next_arrow"
                 android:layout_marginEnd="7dp" />
 
@@ -117,14 +89,14 @@
                 android:id="@+id/next_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/account_number"
-                android:layout_alignBottom="@+id/account_number"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="49dp"
+                android:layout_marginEnd="30dp"
                 android:maxLines="3"
                 android:padding="4dp"
                 android:text=">"
-                android:textSize="18dp" />
+                android:textSize="32dp"
+                android:layout_alignBaseline="@+id/chequing_account_number"
+                android:layout_alignBottom="@+id/chequing_account_number"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
@@ -147,7 +119,7 @@
             android:layout_height="129dp">
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/savings_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -156,53 +128,51 @@
                 android:layout_marginTop="14dp"
                 android:maxLines="3"
                 android:padding="8dp"
-                android:text="BMO Chequing Account"
+                android:text="BMO Savings Account"
                 android:textColor="#222"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/account_number"
+                android:id="@+id/savings_account_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/textView3"
-                android:layout_alignStart="@+id/title"
+                android:layout_alignBottom="@+id/savings_balance"
+                android:layout_alignStart="@+id/savings_title"
                 android:layout_marginBottom="17dp"
                 android:maxLines="3"
                 android:padding="8dp"
-                android:text="1231231234"
+                android:text="1231112223"
                 android:textColor="#222"
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/savings_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/title"
+                android:layout_below="@+id/savings_title"
                 android:layout_marginEnd="7dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="9dp"
-                android:layout_toStartOf="@+id/next_arrow"
-                android:text="$1,234.00"
+                android:layout_toStartOf="@+id/next_arrow2"
+                android:text="$2,403.00"
                 android:textColor="#0000ff"
                 android:textSize="18dp"
-                app:layout_constraintBaseline_toBaselineOf="@+id/button"
-                app:layout_constraintLeft_toRightOf="@+id/button"
                 app:layout_constraintRight_toRightOf="parent" />
 
             <TextView
-                android:id="@+id/next_arrow"
+                android:id="@+id/next_arrow2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/account_number"
-                android:layout_alignBottom="@+id/account_number"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="49dp"
+                android:layout_marginEnd="30dp"
                 android:maxLines="3"
                 android:padding="4dp"
                 android:text=">"
-                android:textSize="18dp" />
+                android:textSize="32dp"
+                android:layout_alignBaseline="@+id/savings_account_number"
+                android:layout_alignBottom="@+id/savings_account_number"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

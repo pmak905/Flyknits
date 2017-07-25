@@ -14,6 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -129,8 +132,8 @@ public class MainActivity extends AppCompatActivity
     /** Open chequing transactions page */
     public void openChqTxns(View view) {
         Intent intent = new Intent(this, DisplayChqTxnsActivity.class);
-        Button button = (Button) findViewById(R.id.button);
-        String header = button.getText().toString();
+        TextView text = (TextView) findViewById(R.id.chequing_title);
+        String header = text.getText().toString();
         intent.putExtra(EXTRA_HEADER, header);
         startActivity(intent);
     }
