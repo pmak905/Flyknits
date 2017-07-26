@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 
-import org.w3c.dom.Text;
+import static com.hackabots.flyknits.MainActivity.EXTRA_HEADER;
 
 /**
  * Created by eric.wong on 2017-07-23.
@@ -60,5 +60,13 @@ public class NotificationsActivity extends AppCompatActivity {
             CardView cardView = (CardView) findViewById(R.id.card_view);
             cardView.setVisibility(View.INVISIBLE);
         }
+    }
+
+    public void launchOpenAccount(View view) {
+        Intent intent = new Intent(this, OpenAccountActivity.class);
+        TextView text = (TextView) findViewById(R.id.open_account_rrsp);
+        String header = text.getText().toString();
+        intent.putExtra(EXTRA_HEADER, header);
+        startActivity(intent);
     }
 }
