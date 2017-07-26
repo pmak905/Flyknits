@@ -25,9 +25,9 @@ public class NotificationsActivity extends AppCompatActivity {
 
     public void launchOpenAccount(View view) {
         Intent intent = new Intent(this, OpenAccountActivity.class);
-//        TextView text = (TextView) findViewById(R.id.chequing_title);
-//        String header = text.getText().toString();
-//        intent.putExtra(EXTRA_HEADER, header);
+        TextView text = (TextView) findViewById(R.id.open_account_rrsp);
+        String header = text.getText().toString();
+        intent.putExtra(EXTRA_HEADER, header);
         startActivity(intent);
     }
 }
