@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.RelativeLayout;
@@ -64,7 +63,7 @@ public class NotificationsActivity extends AppCompatActivity {
 
     public void launchOpenAccount(View view) {
         Intent intent = new Intent(this, OpenAccountActivity.class);
-        TextView text = (TextView) findViewById(R.id.open_account_rrsp);
+        TextView text = (TextView) findViewById(R.id.title);
         String header = text.getText().toString();
         intent.putExtra(EXTRA_HEADER, header);
         startActivity(intent);

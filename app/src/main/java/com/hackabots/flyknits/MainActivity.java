@@ -158,8 +158,8 @@ public class MainActivity extends AppCompatActivity
      */
     private void putNotificationExtras(Intent intent) {
         // TODO: set real extras depending on condition
-        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.action_open_tfsa);
-        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.action_tfsa_description);
+        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_new_gig_header);
+        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_new_gig_desc);
         intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4");
         //intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.new_job);
     }
