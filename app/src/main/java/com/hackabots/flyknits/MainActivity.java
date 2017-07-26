@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity
 
     public static final String EXTRA_HEADER = "com.hackabots.flyknits.HEADER";
     public static final String EXTRA_BALANCE = "com.hackabots.flyknits.BALANCE";
+    public static final String EXTRA_VIDEO_URI = "com.hackabots.flyknits.VIDEO_URI";
+    public static final String EXTRA_NOTIFICATION_IMG = "com.hackabots.flyknits.NOTIFICATION_IMG";
+    public static final String EXTRA_NOTIFICATION_TITLE = "com.hackabots.flyknits.NOTIFICATION_TITLE";
+    public static final String EXTRA_NOTIFICATION_TEXT = "com.hackabots.flyknits.NOTIFICATION_TEXT";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +42,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NotificationsActivity.class);
+                putNotificationExtras(intent);
                 startActivity(intent);
 //                Snackbar.make(view, "You have a new job! Open a RRSP account today.", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
@@ -144,5 +150,17 @@ public class MainActivity extends AppCompatActivity
         intent.putExtra(EXTRA_HEADER, header);
         intent.putExtra(EXTRA_BALANCE, balance);
         startActivity(intent);
+    }
+
+    /**
+     * This helper sets either the image or the video to load depending on what scenario is selected
+     * @param intent The intent to add extras to
+     */
+    private void putNotificationExtras(Intent intent) {
+        // TODO: set real extras depending on condition
+        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.action_open_tfsa);
+        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.action_tfsa_description);
+        intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4");
+        //intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.new_job);
     }
 }
