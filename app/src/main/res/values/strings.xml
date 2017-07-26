@@ -4,9 +4,6 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_open_rrsp">You have a job! Open RRSP.</string>
-    <string name="action_open_tfsa">Open TFSA</string>
-    <string name="action_tfsa_description">In order to make the most of your inflow, consider opening a Tax-Free Savings Account!</string>
     <string name="header_balance">Balances</string>
     <string name="newjob_chq">BMO Chequing</string>
     <string name="main_title">Spending</string>
@@ -16,4 +13,18 @@
     <string name="col_amt">Amount</string>
     <string name="user_name">John Smith</string>
     <string name="user_email">john.smith@cgi.com</string>
+
+    <string name="notification_new_gig_header">You got a job!</string>
+    <string name="notification_new_gig_desc">In order to make the most of your inflow, consider opening a Registered Retirement Savings Account!</string>
+
+    <string name="open_account_header">Open New Account</string>
+    <string name="open_account_client_name_header">Name</string>
+    <string name="open_account_plan_type_header">Account Type</string>
+
+    <string-array name="plan_types">
+        <item>RRSP</item>
+        <item>TFSA</item>
+        <item>RESP</item>
+        <item>RRIF</item>
+    </string-array>
 </resources>
