@@ -20,6 +20,7 @@
     <string name="open_account_header">Open New Account</string>
     <string name="open_account_client_name_header">Name</string>
     <string name="open_account_plan_type_header">Account Type</string>
+    <string name="open_account_create_button">Submit</string>
 
     <string-array name="plan_types">
         <item>RRSP</item>
