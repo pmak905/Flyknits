@@ -98,17 +98,6 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if(item.isCheckable()){
-            if(item.isChecked()){
-                item.setChecked(false);
-                item.setIcon(R.drawable.ic_checkbox_empty);
-            }
-            else {
-                item.setChecked(true);
-                item.setIcon(R.drawable.ic_checkbox_checked);
-            }
-        }
-
         if (id == R.id.nav_life_knot) {
 
         } else if (id == R.id.nav_life_bun) {
@@ -133,8 +122,8 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-//        drawer.closeDrawer(GravityCompat.START);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 

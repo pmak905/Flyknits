@@ -2,84 +2,62 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:checkableBehavior="all"
-        android:title="Life Events">
-        <menu android:checkableBehavior="all">
-            <item
-                android:id="@+id/nav_life_knot"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Tie the Knot" />
-            <item
-                android:id="@+id/nav_life_bun"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Bun in the Oven" />
-            <item
-                android:id="@+id/nav_life_pension"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Goodbye Tension, Hello Pension" />
-            <item
-                android:id="@+id/nav_life_gig"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="New Gig! Make it Rain" />
+    <item android:title="Life Events" android:checkableBehavior="single">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_life_knot"
+                    android:title="Tie the Knot" />
+                <item
+                    android:id="@+id/nav_life_bun"
+                    android:title="Bun in the Oven" />
+                <item
+                    android:id="@+id/nav_life_pension"
+                    android:title="Goodbye Tension, Hello Pension" />
+                <item
+                    android:id="@+id/nav_life_gig"
+                    android:title="New Gig! Make it Rain" />
+            </group>
         </menu>
     </item>
 
-    <item
-        android:checkableBehavior="all"
-        android:title="Tax Events">
-        <menu android:checkableBehavior="all">
-            <item
-                android:id="@+id/nav_fumes"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Running on Fumes" />
-            <item
-                android:id="@+id/nav_brake_bank"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Break the Bank" />
-            <item
-                android:id="@+id/nav_tax_loss_harvest"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Tax-loss Harvestiong" />
+    <item android:title="Tax Events">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_fumes"
+                    android:title="Running on Fumes" />
+                <item
+                    android:id="@+id/nav_brake_bank"
+                    android:title="Break the Bank" />
+                <item
+                    android:id="@+id/nav_tax_loss_harvest"
+                    android:title="Tax-loss Harvestiong" />
+            </group>
         </menu>
     </item>
-    <item
-        android:checkableBehavior="all"
-        android:title="News Events">
-        <menu android:checkableBehavior="all">
-            <item
-                android:id="@+id/nav_new_president"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Make America Great Again!" />
-            <item
-                android:id="@+id/nav_brexit"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Straight Outta Europe" />
+    <item android:title="News Events">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_new_president"
+                    android:title="Make America Great Again!" />
+                <item
+                    android:id="@+id/nav_brexit"
+                    android:title="Straight Outta Europe" />
+            </group>
         </menu>
     </item>
-    <item
-        android:checkableBehavior="all"
-        android:title="Unexpected Events">
-        <menu android:checkableBehavior="all">
-            <item
-                android:id="@+id/nav_jackpot"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="Jackpot!" />
-            <item
-                android:id="@+id/nav_inheritance"
-                android:checkable="true"
-                android:icon="@drawable/ic_checkbox_empty"
-                android:title="When it Rains, it Pours!" />
+    <item android:title="Unexpected Events">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_jackpot"
+                    android:title="Jackpot!" />
+                <item
+                    android:id="@+id/nav_inheritance"
+                    android:title="When it Rains, it Pours!" />
+            </group>
         </menu>
     </item>
 </menu>
