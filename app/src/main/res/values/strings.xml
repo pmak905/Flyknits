@@ -10,6 +10,7 @@
     <string name="header_balance">Balances</string>
     <string name="newjob_chq">BMO Chequing</string>
     <string name="main_title">Spending</string>
+    <string name="table_header_transactions">Transactions</string>
     <string name="col_date">Date</string>
     <string name="col_desc">Description</string>
     <string name="col_amt">Amount</string>

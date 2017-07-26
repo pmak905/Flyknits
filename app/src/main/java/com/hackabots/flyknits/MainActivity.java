@@ -18,10 +18,13 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import static com.hackabots.flyknits.R.id.chequing_balance;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static final String EXTRA_HEADER = "com.hackabots.flyknits.HEADER";
+    public static final String EXTRA_BALANCE = "com.hackabots.flyknits.BALANCE";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,9 +135,14 @@ public class MainActivity extends AppCompatActivity
     /** Open chequing transactions page */
     public void openChqTxns(View view) {
         Intent intent = new Intent(this, DisplayChqTxnsActivity.class);
-        TextView text = (TextView) findViewById(R.id.chequing_title);
-        String header = text.getText().toString();
+        TextView account_type = (TextView) findViewById(R.id.chequing_title);
+        TextView account_number = (TextView) findViewById(R.id.chequing_account_number);
+        TextView account_balance = (TextView) findViewById(R.id.chequing_balance);
+
+        String header = account_type.getText().toString() + " - " + account_number.getText().toString();
+        String balance = account_balance.getText().toString();
         intent.putExtra(EXTRA_HEADER, header);
+        intent.putExtra(EXTRA_BALANCE, balance);
         startActivity(intent);
     }
 }
