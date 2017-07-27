@@ -151,21 +151,30 @@ public class MainActivity extends AppCompatActivity
                 break;
             }
             case R.id.nav_life_bun: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_life_bun);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_life_bun);
+                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_life_bun);
                 break;
             }
             case R.id.nav_life_pension: {
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_pension);
-                intent.removeExtra(MainActivity.EXTRA_NOTIFICATION_TEXT);
-                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_new_gig);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_pension);
+                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_pension);
                 break;
             }
             case R.id.nav_life_gig: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_new_gig);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_new_gig);
+                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_new_gig);
                 break;
             }
             case R.id.nav_fumes: {
                 break;
             }
-            case R.id.nav_brake_bank: {
+            case R.id.nav_break_bank: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_break_bank);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_break_bank);
+                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_break_bank);
                 break;
             }
             case R.id.nav_tax_loss_harvest: {

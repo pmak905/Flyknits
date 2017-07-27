@@ -34,7 +34,7 @@
             android:layout_below="@+id/videoView"
             android:maxLines="3"
             android:padding="8dp"
-            android:text="@string/notification_new_gig_header"
+            android:text="@string/notification_title_new_gig"
             android:textColor="#222"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -46,7 +46,7 @@
             android:layout_below="@+id/title"
             android:maxLines="3"
             android:padding="8dp"
-            android:text="@string/notification_new_gig_desc"
+            android:text="@string/notification_desc_new_gig"
             android:textColor="#666"
             android:textSize="14sp" />
 

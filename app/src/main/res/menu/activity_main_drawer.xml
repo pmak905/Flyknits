@@ -28,11 +28,11 @@
                     android:id="@+id/nav_fumes"
                     android:title="Running on Fumes" />
                 <item
-                    android:id="@+id/nav_brake_bank"
+                    android:id="@+id/nav_break_bank"
                     android:title="Break the Bank" />
                 <item
                     android:id="@+id/nav_tax_loss_harvest"
-                    android:title="Tax-loss Harvestiong" />
+                    android:title="Tax-loss Harvesting" />
             </group>
         </menu>
     </item>

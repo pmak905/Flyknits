@@ -14,9 +14,6 @@
     <string name="user_name">John Smith</string>
     <string name="user_email">john.smith@cgi.com</string>
 
-    <string name="notification_new_gig_header">You got a job!</string>
-    <string name="notification_new_gig_desc">In order to make the most of your inflow, consider opening a Tax Free Savings Account!</string>
-
     <string name="open_account_header">Open New Account</string>
     <string name="open_account_client_name_header">Name</string>
     <string name="open_account_plan_type_header">Account Type</string>
@@ -28,7 +25,19 @@
         <item>RRSP</item>
         <item>TFSA</item>
     </string-array>
+
     <string name="notification_title_knot">Tie the Knot</string>
     <string name="notification_desc_knot">Congratulations. It\'s time to plan ahead. Whether you\'re financing a maternity leave or splitting income during retirement, a spousal RRSP account is something to consider. For additional information, click here.</string>
+
+    <string name="notification_title_new_gig">You got a job!</string>
+    <string name="notification_desc_new_gig">In order to make the most of your inflow, consider opening a Tax Free Savings Account!</string>
+
     <string name="notification_title_pension">Goodbye Tension, Hello Pension</string>
+    <string name="notification_desc_pension">Time to convert your RRSP account to RRIF</string>
+    
+    <string name="notification_title_life_bun">Life Bun</string>
+    <string name="notification_desc_life_bun">Time to open a RESP account</string>
+
+    <string name="notification_title_break_bank">No Need to Break the Bank!</string>
+    <string name="notification_desc_break_bank">Make regular contributions</string>
 </resources>

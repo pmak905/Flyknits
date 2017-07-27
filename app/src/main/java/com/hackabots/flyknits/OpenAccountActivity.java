@@ -19,9 +19,14 @@ public class OpenAccountActivity extends AppCompatActivity {
         String header = intent.getStringExtra(MainActivity.EXTRA_HEADER);
         Spinner planTypeSpinner = (Spinner) findViewById(R.id.plan_type);
 
-        if (header.equals("You got a job!")) {
-            planTypeSpinner.setSelection(4);
-        }
+        if ("Life Bun".equals(header))
+            planTypeSpinner.setSelection(0); // RESP
+        else if ("Goodbye Tension, Hello Pension".equals(header))
+            planTypeSpinner.setSelection(1); // RRIF
+        else if ("Tie the Knot".equals(header))
+            planTypeSpinner.setSelection(2); // RRSP
+        else if ("You got a job!".equals(header))
+            planTypeSpinner.setSelection(3); // TFSA
     }
 
     public void submitNewAccountOnClick(View view) {
