@@ -43,11 +43,15 @@
 
     <string name="notification_title_new_prez">New president in the house!</string>
     <string name="notification_desc_new_prez">Global financial landscape is changing with the inauguration of Donald Trump as the new president
-        of the United States. Learn more about what that means to you</string>
+        of the United States. Click here to learn more about what that means to you.</string>
 
     <string name="notification_title_brexit">British people vote YES!</string>
     <string name="notification_desc_brexit">Learn about the global financial repercussions with Britain slated to leave the European Union.</string>
 
     <string name="notification_title_jackpot">OMG, you won the jackpot!</string>
     <string name="notification_desc_jackpot">Time to consider what to do with your sudden influx of wealth.</string>
+    <string name="notification_title_inheritance">When it Rains, it Pours</string>
+    <string name="notification_desc_inheritance">It\'s a good thing that you have been saving for a rainy day. You may want to withdraw from your TFSA instead of RRSP to avoid tax implications. For additional information, click here.</string>
+    <string name="notification_title_fumes">Running on Empty (RRSP Withdrawals)</string>
+    <string name="notifications_desc_fumes">Life throws many curveballs. You can hit the curve balls out of the park by making informed decisions. When you need money and plan to withdraw from your RRSP, your institution will hold back a percentage of your money based on the amount you withdraw. For additional information, click here.</string>
 </resources>

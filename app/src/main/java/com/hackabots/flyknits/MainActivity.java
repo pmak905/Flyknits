@@ -94,30 +94,6 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         menuSelection = item.getItemId();
 
-//        if (id == R.id.nav_life_knot) {
-//
-//        } else if (id == R.id.nav_life_bun) {
-//
-//        } else if (id == R.id.nav_life_pension) {
-//
-//        } else if (id == R.id.nav_life_gig) {
-//
-//        } else if (id == R.id.nav_fumes) {
-//
-//        } else if (id == R.id.nav_brake_bank) {
-//
-//        } else if (id == R.id.nav_tax_loss_harvest) {
-//
-//        } else if (id == R.id.nav_new_president) {
-//
-//        } else if (id == R.id.nav_brexit) {
-//
-//        } else if (id == R.id.nav_jackpot) {
-//
-//        } else if (id == R.id.nav_inheritance) {
-//
-//        }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -142,7 +118,6 @@ public class MainActivity extends AppCompatActivity
      * @param intent The intent to add extras to
      */
     private void putNotificationExtras(Intent intent) {
-        // TODO: set real extras depending on condition
         switch (menuSelection) {
             case R.id.nav_life_knot: {
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_knot);
@@ -169,15 +144,15 @@ public class MainActivity extends AppCompatActivity
                 break;
             }
             case R.id.nav_fumes: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_fumes);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notifications_desc_fumes);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.fumes);
                 break;
             }
             case R.id.nav_break_bank: {
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_break_bank);
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_break_bank);
                 intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_break_bank);
-                break;
-            }
-            case R.id.nav_tax_loss_harvest: {
                 break;
             }
             case R.id.nav_new_president: {
@@ -199,6 +174,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             }
             case R.id.nav_inheritance: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_inheritance);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_inheritance);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.inheritance);
                 break;
             }
             default:
