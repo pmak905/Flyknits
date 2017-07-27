@@ -25,7 +25,7 @@
         <activity
             android:name=".NotificationsActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".OpenAccountActivity"></activity>
+        <activity android:name=".OpenAccountActivity" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

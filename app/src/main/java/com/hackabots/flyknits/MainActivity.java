@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_life_pension: {
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_pension);
                 intent.removeExtra(MainActivity.EXTRA_NOTIFICATION_TEXT);
-                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, R.raw.pension);
+                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "android.resource://"+getPackageName()+"/"+R.raw.notification_vid_new_gig);
                 break;
             }
             case R.id.nav_life_gig: {

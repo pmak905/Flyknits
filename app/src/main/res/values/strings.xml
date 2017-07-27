@@ -15,7 +15,7 @@
     <string name="user_email">john.smith@cgi.com</string>
 
     <string name="notification_new_gig_header">You got a job!</string>
-    <string name="notification_new_gig_desc">In order to make the most of your inflow, consider opening a Registered Retirement Savings Account!</string>
+    <string name="notification_new_gig_desc">In order to make the most of your inflow, consider opening a Tax Free Savings Account!</string>
 
     <string name="open_account_header">Open New Account</string>
     <string name="open_account_client_name_header">Name</string>

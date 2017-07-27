@@ -20,8 +20,7 @@ public class OpenAccountActivity extends AppCompatActivity {
         Spinner planTypeSpinner = (Spinner) findViewById(R.id.plan_type);
 
         if (header.equals("You got a job!")) {
-
-            planTypeSpinner.setSelection(2);
+            planTypeSpinner.setSelection(4);
         }
     }
 
