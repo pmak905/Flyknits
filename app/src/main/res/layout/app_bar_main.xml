@@ -20,16 +20,16 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <com.andremion.counterfab.CounterFab
         android:id="@+id/fabNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/ic_notification_bell" />
-
-    <include
-        android:id="@+id/include"
-        layout="@layout/content_main" />
 
 </android.support.design.widget.CoordinatorLayout>
