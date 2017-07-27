@@ -40,4 +40,14 @@
 
     <string name="notification_title_break_bank">No Need to Break the Bank!</string>
     <string name="notification_desc_break_bank">Make regular contributions</string>
+
+    <string name="notification_title_new_prez">New president in the house!</string>
+    <string name="notification_desc_new_prez">Global financial landscape is changing with the inauguration of Donald Trump as the new president
+        of the United States. Learn more about what that means to you</string>
+
+    <string name="notification_title_brexit">British people vote YES!</string>
+    <string name="notification_desc_brexit">Learn about the global financial repercussions with Britain slated to leave the European Union.</string>
+
+    <string name="notification_title_jackpot">OMG, you won the jackpot!</string>
+    <string name="notification_desc_jackpot">Time to consider what to do with your sudden influx of wealth.</string>
 </resources>

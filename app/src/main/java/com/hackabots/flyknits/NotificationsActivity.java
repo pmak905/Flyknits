@@ -65,11 +65,30 @@ public class NotificationsActivity extends AppCompatActivity {
         }
     }
 
-    public void launchOpenAccount(View view) {
-        Intent intent = new Intent(this, OpenAccountActivity.class);
+    public void launchAction(View view) {
+
         TextView text = (TextView) findViewById(R.id.title);
         String header = text.getText().toString();
-        intent.putExtra(EXTRA_HEADER, header);
-        startActivity(intent);
+
+        if ("Life Bun".equals(header) || "Goodbye Tension, Hello Pension".equals(header) ||
+                "Tie the Knot".equals(header) || "You got a job!".equals(header)) {
+            Intent intent = new Intent(this, OpenAccountActivity.class);
+            intent.putExtra(EXTRA_HEADER, header);
+            startActivity(intent);
+        }
+        else {
+            String uri = "";
+            if ("British people vote YES!".equals(header))
+                uri = "http://www.express.co.uk/news/politics/645667/Brexit-EU-European-Union-Referendum-David-Cameron-Economic-Impact-UK-EU-exit-leave";
+            else if ("New president in the house!".equals(header))
+                uri = "https://www.economist.com/blogs/freeexchange/2016/11/global-economy";
+
+            if (!"".equals(uri)) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                startActivity(browserIntent);
+            }
+        }
+
+
     }
 }

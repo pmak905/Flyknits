@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:onClick="launchOpenAccount">
+    android:onClick="launchAction">
 
     <RelativeLayout
         android:layout_width="match_parent"

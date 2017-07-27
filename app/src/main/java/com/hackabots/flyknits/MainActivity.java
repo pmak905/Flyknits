@@ -181,12 +181,21 @@ public class MainActivity extends AppCompatActivity
                 break;
             }
             case R.id.nav_new_president: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_new_prez);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_new_prez);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.notification_img_new_prez);
                 break;
             }
             case R.id.nav_brexit: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_brexit);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_brexit);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.notification_img_brexit);
                 break;
             }
             case R.id.nav_jackpot: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_jackpot);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_jackpot);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.notification_img_jackpot);
                 break;
             }
             case R.id.nav_inheritance: {
