@@ -3,8 +3,6 @@ package com.hackabots.flyknits;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,12 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
+import android.view.View;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import static com.hackabots.flyknits.R.id.chequing_balance;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,6 +23,8 @@ public class MainActivity extends AppCompatActivity
     public static final String EXTRA_NOTIFICATION_IMG = "com.hackabots.flyknits.NOTIFICATION_IMG";
     public static final String EXTRA_NOTIFICATION_TITLE = "com.hackabots.flyknits.NOTIFICATION_TITLE";
     public static final String EXTRA_NOTIFICATION_TEXT = "com.hackabots.flyknits.NOTIFICATION_TEXT";
+
+    private int menuSelection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,31 +92,31 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        menuSelection = item.getItemId();
 
-        if (id == R.id.nav_life_knot) {
-
-        } else if (id == R.id.nav_life_bun) {
-
-        } else if (id == R.id.nav_life_pension) {
-
-        } else if (id == R.id.nav_life_gig) {
-
-        } else if (id == R.id.nav_fumes) {
-
-        } else if (id == R.id.nav_brake_bank) {
-
-        } else if (id == R.id.nav_tax_loss_harvest) {
-
-        } else if (id == R.id.nav_new_president) {
-
-        } else if (id == R.id.nav_brexit) {
-
-        } else if (id == R.id.nav_jackpot) {
-
-        } else if (id == R.id.nav_inheritance) {
-
-        }
+//        if (id == R.id.nav_life_knot) {
+//
+//        } else if (id == R.id.nav_life_bun) {
+//
+//        } else if (id == R.id.nav_life_pension) {
+//
+//        } else if (id == R.id.nav_life_gig) {
+//
+//        } else if (id == R.id.nav_fumes) {
+//
+//        } else if (id == R.id.nav_brake_bank) {
+//
+//        } else if (id == R.id.nav_tax_loss_harvest) {
+//
+//        } else if (id == R.id.nav_new_president) {
+//
+//        } else if (id == R.id.nav_brexit) {
+//
+//        } else if (id == R.id.nav_jackpot) {
+//
+//        } else if (id == R.id.nav_inheritance) {
+//
+//        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -147,9 +143,49 @@ public class MainActivity extends AppCompatActivity
      */
     private void putNotificationExtras(Intent intent) {
         // TODO: set real extras depending on condition
-        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_new_gig_header);
-        intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_new_gig_desc);
-        intent.putExtra(MainActivity.EXTRA_VIDEO_URI, "https://archive.org/download/ksnn_compilation_master_the_internet/ksnn_compilation_master_the_internet_512kb.mp4");
-        //intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.new_job);
+        switch (menuSelection) {
+            case R.id.nav_life_knot: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_knot);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_knot);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.marriage);
+                break;
+            }
+            case R.id.nav_life_bun: {
+                break;
+            }
+            case R.id.nav_life_pension: {
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_pension);
+                intent.removeExtra(MainActivity.EXTRA_NOTIFICATION_TEXT);
+                intent.putExtra(MainActivity.EXTRA_VIDEO_URI, R.raw.pension);
+                break;
+            }
+            case R.id.nav_life_gig: {
+                break;
+            }
+            case R.id.nav_fumes: {
+                break;
+            }
+            case R.id.nav_brake_bank: {
+                break;
+            }
+            case R.id.nav_tax_loss_harvest: {
+                break;
+            }
+            case R.id.nav_new_president: {
+                break;
+            }
+            case R.id.nav_brexit: {
+                break;
+            }
+            case R.id.nav_jackpot: {
+                break;
+            }
+            case R.id.nav_inheritance: {
+                break;
+            }
+            default:
+                break;
+        }
+
     }
 }

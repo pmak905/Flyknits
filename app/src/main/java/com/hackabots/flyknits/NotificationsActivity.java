@@ -37,8 +37,12 @@ public class NotificationsActivity extends AppCompatActivity {
 
         imgView.setVisibility(View.GONE);
         vidView.setVisibility(View.GONE);
-        titleView.setText(intent.getIntExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, 0));
-        descView.setText(intent.getIntExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, 0));
+        if (intent.hasExtra(MainActivity.EXTRA_NOTIFICATION_TITLE)) {
+            titleView.setText(intent.getIntExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, 0));
+        }
+        if (intent.hasExtra(MainActivity.EXTRA_NOTIFICATION_TEXT)) {
+            descView.setText(intent.getIntExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, 0));
+        }
 
         // either show image or show video or show nothing
         if (intent.hasExtra(MainActivity.EXTRA_NOTIFICATION_IMG)) {

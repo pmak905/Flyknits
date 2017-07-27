@@ -28,4 +28,7 @@
         <item>RRSP</item>
         <item>TFSA</item>
     </string-array>
+    <string name="notification_title_knot">Tie the Knot</string>
+    <string name="notification_desc_knot">Congratulations. It\'s time to plan ahead. Whether you\'re financing a maternity leave or splitting income during retirement, a spousal RRSP account is something to consider. For additional information, click here.</string>
+    <string name="notification_title_pension">Goodbye Tension, Hello Pension</string>
 </resources>
