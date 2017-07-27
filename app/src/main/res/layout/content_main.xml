@@ -125,7 +125,7 @@
                 android:layout_marginTop="14dp"
                 android:maxLines="3"
                 android:padding="8dp"
-                android:text="BMO Savings Account"
+                android:text="Non-Registered Account"
                 android:textColor="#222"
                 android:textSize="22dp"
                 android:textStyle="bold" />

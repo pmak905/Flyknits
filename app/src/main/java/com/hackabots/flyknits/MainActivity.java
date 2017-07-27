@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabNotification);
+        fab.setVisibility(View.GONE);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         menuSelection = item.getItemId();
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabNotification);
+        fab.setVisibility(View.VISIBLE);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -176,7 +179,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_inheritance: {
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TITLE, R.string.notification_title_inheritance);
                 intent.putExtra(MainActivity.EXTRA_NOTIFICATION_TEXT, R.string.notification_desc_inheritance);
-                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.inheritance);
+                intent.putExtra(MainActivity.EXTRA_NOTIFICATION_IMG, R.drawable.rainy);
                 break;
             }
             default:

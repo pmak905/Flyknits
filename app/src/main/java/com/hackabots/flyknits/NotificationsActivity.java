@@ -70,7 +70,7 @@ public class NotificationsActivity extends AppCompatActivity {
         TextView text = (TextView) findViewById(R.id.title);
         String header = text.getText().toString();
 
-        if ("Life Bun".equals(header) || "Goodbye Tension, Hello Pension".equals(header) ||
+        if ("Bun in the Oven".equals(header) || "Goodbye Tension, Hello Pension".equals(header) ||
                 "Tie the Knot".equals(header) || "You got a job!".equals(header)) {
             Intent intent = new Intent(this, OpenAccountActivity.class);
             intent.putExtra(EXTRA_HEADER, header);
