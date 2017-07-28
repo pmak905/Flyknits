@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Life Events" android:checkableBehavior="single">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_life_gig"
+                    android:title="New Gig! Make it Rain" />
+                <item
+                    android:id="@+id/nav_life_knot"
+                    android:title="Tie the Knot" />
+                <item
+                    android:id="@+id/nav_life_bun"
+                    android:title="Bun in the Oven" />
+                <item
+                    android:id="@+id/nav_life_pension"
+                    android:title="Goodbye Tension, Hello Pension" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Tax Events">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_fumes"
+                    android:title="Running on Fumes" />
+                <item
+                    android:id="@+id/nav_break_bank"
+                    android:title="Break the Bank" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="News Events">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_new_president"
+                    android:title="Make America Great Again!" />
+                <item
+                    android:id="@+id/nav_brexit"
+                    android:title="Straight Outta Europe" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Unexpected Events">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_jackpot"
+                    android:title="Jackpot!" />
+                <item
+                    android:id="@+id/nav_inheritance"
+                    android:title="When it Rains, it Pours!" />
+            </group>
+        </menu>
+    </item>
+</menu>

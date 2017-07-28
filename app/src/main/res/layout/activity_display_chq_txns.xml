@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackabots.flyknits.DisplayChqTxnsActivity">
+
+    <TextView
+        android:id="@+id/page_account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Header"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+    <TextView
+        android:id="@+id/page_account_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Header"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+    <TextView
+        android:id="@+id/transactions_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TRANSACTIONS"
+        android:gravity="center"
+        android:background="#808080"
+        android:textColor="#FFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/transaction_1_card"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="110dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="392dp"
+            android:layout_height="129dp">
+
+            <TextView
+                android:id="@+id/transaction_1_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_1_balance"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="34dp"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="Jul 24"
+                android:textSize="12dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="54dp"
+                tools:layout_conversion_absoluteX="22dp"
+                tools:layout_conversion_absoluteY="138dp"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_1_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_1_balance"
+                android:layout_alignStart="@+id/transaction_1_amount"
+                android:maxLines="3"
+                android:text="BMO Money-Back Credit Card payment"
+                android:textSize="13dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="96dp"
+                tools:layout_conversion_absoluteX="148dp"
+                tools:layout_conversion_absoluteY="122dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="34dp" />
+
+            <TextView
+                android:id="@+id/transaction_1_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/transaction_1_date"
+                android:layout_marginStart="29dp"
+                android:layout_toEndOf="@+id/transaction_1_date"
+                android:text="$-1,234.00"
+                android:textColor="#000"
+                android:textSize="18dp"
+                tools:layout_conversion_absoluteHeight="21dp"
+                tools:layout_conversion_absoluteWidth="78dp"
+                tools:layout_conversion_absoluteX="89dp"
+                tools:layout_conversion_absoluteY="90dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_1_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/transaction_1_description"
+                android:layout_centerVertical="true"
+                android:text="Balance: $1,010.00"
+                tools:layout_conversion_absoluteHeight="33dp"
+                tools:layout_conversion_absoluteWidth="116dp"
+                tools:layout_conversion_absoluteX="260dp"
+                tools:layout_conversion_absoluteY="137dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/transaction_2_card"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="195dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="392dp"
+            android:layout_height="129dp">
+
+            <TextView
+                android:id="@+id/transaction_2_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_2_balance"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="34dp"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="Jul 23"
+                android:textSize="12dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="54dp"
+                tools:layout_conversion_absoluteX="22dp"
+                tools:layout_conversion_absoluteY="138dp"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_2_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_2_balance"
+                android:layout_alignStart="@+id/transaction_2_amount"
+                android:maxLines="3"
+                android:text="EFT Deposit from ISMC"
+                android:textSize="13dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="96dp"
+                tools:layout_conversion_absoluteX="148dp"
+                tools:layout_conversion_absoluteY="122dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="34dp" />
+
+            <TextView
+                android:id="@+id/transaction_2_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/transaction_2_date"
+                android:layout_marginStart="29dp"
+                android:layout_toEndOf="@+id/transaction_2_date"
+                android:text="$2,102.00"
+                android:textColor="#000"
+                android:textSize="18dp"
+                tools:layout_conversion_absoluteHeight="21dp"
+                tools:layout_conversion_absoluteWidth="78dp"
+                tools:layout_conversion_absoluteX="89dp"
+                tools:layout_conversion_absoluteY="90dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_2_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/transaction_2_description"
+                android:layout_centerVertical="true"
+                android:text="Balance: $2,468.00"
+                tools:layout_conversion_absoluteHeight="33dp"
+                tools:layout_conversion_absoluteWidth="116dp"
+                tools:layout_conversion_absoluteX="260dp"
+                tools:layout_conversion_absoluteY="137dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/transaction_3_card"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="392dp"
+            android:layout_height="129dp">
+
+            <TextView
+                android:id="@+id/transaction_3_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_3_balance"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="34dp"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="Jul 23"
+                android:textSize="12dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="54dp"
+                tools:layout_conversion_absoluteX="22dp"
+                tools:layout_conversion_absoluteY="138dp"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_3_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_3_balance"
+                android:layout_alignStart="@+id/transaction_3_amount"
+                android:maxLines="3"
+                android:text="AMERICAN EXPRESS CREDIT CARD"
+                android:textSize="13dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="96dp"
+                tools:layout_conversion_absoluteX="148dp"
+                tools:layout_conversion_absoluteY="122dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="34dp" />
+
+            <TextView
+                android:id="@+id/transaction_3_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/transaction_3_date"
+                android:layout_marginStart="29dp"
+                android:layout_toEndOf="@+id/transaction_3_date"
+                android:text="$-234.00"
+                android:textColor="#000"
+                android:textSize="18dp"
+                tools:layout_conversion_absoluteHeight="21dp"
+                tools:layout_conversion_absoluteWidth="78dp"
+                tools:layout_conversion_absoluteX="89dp"
+                tools:layout_conversion_absoluteY="90dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_3_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/transaction_3_description"
+                android:layout_centerVertical="true"
+                android:text="Balance: $366.00"
+                tools:layout_conversion_absoluteHeight="33dp"
+                tools:layout_conversion_absoluteWidth="116dp"
+                tools:layout_conversion_absoluteX="260dp"
+                tools:layout_conversion_absoluteY="137dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/transaction_4_card"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="365dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="392dp"
+            android:layout_height="129dp">
+
+            <TextView
+                android:id="@+id/transaction_4_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_4_balance"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="34dp"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="Jul 20"
+                android:textSize="12dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="54dp"
+                tools:layout_conversion_absoluteX="22dp"
+                tools:layout_conversion_absoluteY="138dp"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_4_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/transaction_4_balance"
+                android:layout_alignStart="@+id/transaction_4_amount"
+                android:maxLines="3"
+                android:text="Interac - Purchase - Congee Queen"
+                android:textSize="13dp"
+                tools:layout_conversion_absoluteHeight="32dp"
+                tools:layout_conversion_absoluteWidth="96dp"
+                tools:layout_conversion_absoluteX="148dp"
+                tools:layout_conversion_absoluteY="122dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="34dp" />
+
+            <TextView
+                android:id="@+id/transaction_4_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/transaction_4_date"
+                android:layout_marginStart="29dp"
+                android:layout_toEndOf="@+id/transaction_4_date"
+                android:text="$-1,234.00"
+                android:textColor="#000"
+                android:textSize="18dp"
+                tools:layout_conversion_absoluteHeight="21dp"
+                tools:layout_conversion_absoluteWidth="78dp"
+                tools:layout_conversion_absoluteX="89dp"
+                tools:layout_conversion_absoluteY="90dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/transaction_4_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/transaction_4_description"
+                android:layout_centerVertical="true"
+                android:text="Balance: $600.00"
+                tools:layout_conversion_absoluteHeight="33dp"
+                tools:layout_conversion_absoluteWidth="116dp"
+                tools:layout_conversion_absoluteX="260dp"
+                tools:layout_conversion_absoluteY="137dp"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
