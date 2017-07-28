@@ -33,13 +33,13 @@
     <string name="notification_desc_new_gig">In order to make the most of your inflow, consider opening a Tax Free Savings Account!</string>
 
     <string name="notification_title_pension">Goodbye Tension, Hello Pension</string>
-    <string name="notification_desc_pension">Time to convert your RRSP account to RRIF</string>
+    <string name="notification_desc_pension">Time to convert your RRSP account to RRIF.</string>
     
     <string name="notification_title_life_bun">Bun in the Oven</string>
-    <string name="notification_desc_life_bun">Time to open a RESP account</string>
+    <string name="notification_desc_life_bun">New kid on the block! Time to open a RESP account.</string>
 
     <string name="notification_title_break_bank">No Need to Break the Bank!</string>
-    <string name="notification_desc_break_bank">Make regular contributions</string>
+    <string name="notification_desc_break_bank">Make regular investment contributions to balance out market fluctuations.</string>
 
     <string name="notification_title_new_prez">New president in the house!</string>
     <string name="notification_desc_new_prez">Global financial landscape is changing with the inauguration of Donald Trump as the new president
